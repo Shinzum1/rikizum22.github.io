@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <!-----HEADER-------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./course.html">Course</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars showmn"onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+<!---ABOUT US CONTENT-->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>n faucibus libero sit amet sem euismod iaculis. Maecenas quis ornare massa, at dictum ipsum. Integer interdum eget tortor et aliquam. Donec eget enim sed tellus tempor dapibus. Fusce id massa lobortis urna venenatis scelerisque vitae nec purus. Aenean vestibulum velit sit amet ultrices laoreet. Maecenas a eros sapien.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="./assets/img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+<!------FOOTER------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,<br> per inceptos himenaeos. Nulla scelerisque mi ante, non malesuada magna elementum eu. Nulla pellentesque tortor nec magna tincidunt blandit</p>
+    <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> by LTH</p>
+</section>
+    
+    <!--------JS TOGGLE MENU------------>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
